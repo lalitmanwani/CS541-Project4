@@ -100,6 +100,7 @@
                             <constraint firstItem="ci2-XO-FeD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="myE-1e-eU1"/>
                             <constraint firstItem="ci2-XO-FeD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="snF-No-f5N"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="C3e-Pz-cvD"/>
                     </view>
                     <connections>
                         <outlet property="booktable" destination="ci2-XO-FeD" id="PCf-hu-Ig9"/>
@@ -122,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fqm-Nu-Qg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="96"/>
+            <point key="canvasLocation" x="915.94202898550736" y="95.758928571428569"/>
         </scene>
     </scenes>
 </document>
