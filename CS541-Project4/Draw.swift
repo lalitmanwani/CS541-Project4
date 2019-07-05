@@ -10,67 +10,29 @@ import UIKit
 
 class Draw: UIView {
 
-   var m:Double = 0.0
-    var c:Double = 0.0
-    
+   var m:CGFloat = 0.0
+    var c:CGFloat = 0.0
+    var d:CGRect = CGRect()
     
     override func draw(_ rect: CGRect) {
         
-           let context = UIGraphicsGetCurrentContext()
-        //context!.setLineWidth(3.0)
-        
-        
-        let xorigin:CGFloat = rect.width/2
-        let yorigin:CGFloat = rect.height/2
-        print(xorigin)
-        print(yorigin)
-        
-        
-        let x:CGFloat = xorigin
-       
-        
-        
-        let m:CGFloat = 20
-        let c:CGFloat = 30
-        
-        let y:CGFloat = m*x+c
-        
-        let origin:CGPoint = CGPoint(x: xorigin,y: yorigin + c)
-        
-        let dest:CGPoint = CGPoint(x: 50 , y: y)
-        
-        context?.move(to: origin)
-        
-        context?.addLine(to: dest)
-        
-        
-//        context?.move(to: CGPoint(x: rect.width/2 , y : rect.height / 2))
-        
-     
-     
-     
-     
-     
-     
-     
-//       rect.height
-        
-//        m = 5;
-  //      c = 1
 
-    //    y = m*((rect.width/2) + 200)+c;
+    
+        d = rect
 
-    //    context?.addLine(to: CGPoint(x:((rect.width/2) + 200), y:((rect.height/2) - 200)))
-            
-     ////   context?.addLines(between: <#T##[CGPoint]#>)
- 
-     //   context?.strokePath()
-       
    
         
         
-        draworigin(rect: rect)
+        draworigin(rect: d)
    
+        
+//        if m != 0.0 {
+            dr(rect: d)
+  //      }
+        
+        
+        
+        
         
     }
     
@@ -98,7 +60,40 @@ class Draw: UIView {
         context?.strokePath()
     }
  
-    
+    func dr(rect:CGRect){
+        let ctx = UIGraphicsGetCurrentContext()
+       // ctx!.setLineWidth(3.0)
+        
+        let g = GraphViewController()
+        m = g.s
+        c = g.yi
+        
+        let xorigin:CGFloat = rect.width/2
+        let yorigin:CGFloat = rect.height/2
+        print(xorigin)
+        print(yorigin)
+        
+        
+
+        
+        let x:CGFloat = 50
+        
+        //m = 15.0
+        //c = 0.0
+        
+        let y:CGFloat = m*x+c
+        
+        let origin:CGPoint = CGPoint(x: xorigin ,y: yorigin + c)
+        
+        let dest:CGPoint = CGPoint(x: x , y: y)
+        
+        ctx?.move(to: origin)
+        
+        ctx?.addLine(to: dest)
+        
+        ctx?.strokePath()
+        
+    }
     
     
 

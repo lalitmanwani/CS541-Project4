@@ -10,10 +10,30 @@ import UIKit
 
 class GraphViewController: UIViewController {
 
+    @IBOutlet weak var slope: UISlider!
+    
+    @IBOutlet weak var yinter: UISlider!
+    
+    
+    var s:CGFloat = 0.0
+    
+    
+    var yi:CGFloat = 0.0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
+        s = CGFloat(slope.value)
+        yi = CGFloat(yinter.value)
+        
+        //let  d = Draw()
+        //d.m = s
+        //d.c = yi
+        
         
         
         
@@ -21,6 +41,11 @@ class GraphViewController: UIViewController {
 
     
 
+    @IBAction func slopechanged(_ sender: Any) {
+        
+        let d = Draw()
+        d.dr(rect: d.d)
+    }
     
     
 
