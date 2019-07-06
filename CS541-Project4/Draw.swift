@@ -10,26 +10,19 @@ import UIKit
 
 class Draw: UIView {
 
-   var m:CGFloat = 0.0
-    var c:CGFloat = 0.0
-    var d:CGRect = CGRect()
+ 
+    var m:CGFloat = 50.0
+    var c:CGFloat = 50.0
     
     override func draw(_ rect: CGRect) {
         
 
-    
-        d = rect
+        
+        draworigin(rect: rect)
+   
+        
 
-   
-        
-        
-        draworigin(rect: d)
-   
-        
-//        if m != 0.0 {
-            dr(rect: d)
-  //      }
-        
+   //         dr(rect: rect)
         
         
         
@@ -60,14 +53,11 @@ class Draw: UIView {
         context?.strokePath()
     }
  
-    func dr(rect:CGRect){
+  /*  func dr(rect:CGRect){
         let ctx = UIGraphicsGetCurrentContext()
        // ctx!.setLineWidth(3.0)
         
-        let g = GraphViewController()
-        m = g.s
-        c = g.yi
-        
+      
         let xorigin:CGFloat = rect.width/2
         let yorigin:CGFloat = rect.height/2
         print(xorigin)
@@ -96,6 +86,6 @@ class Draw: UIView {
     }
     
     
-
+*/
 
 }

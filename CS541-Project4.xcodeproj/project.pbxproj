@@ -14,8 +14,8 @@
 		843CC98E22CC698F00BC85AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843CC98C22CC698F00BC85AE /* LaunchScreen.storyboard */; };
 		843CC99622CC6D3000BC85AE /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CC99522CC6D3000BC85AE /* BookCell.swift */; };
 		843CC99822CC6F0000BC85AE /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CC99722CC6F0000BC85AE /* Book.swift */; };
-		843CC99A22CC7A9D00BC85AE /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CC99922CC7A9D00BC85AE /* GraphViewController.swift */; };
 		843CC99C22CCB15900BC85AE /* Draw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CC99B22CCB15900BC85AE /* Draw.swift */; };
+		84AA84DB22D08A2C008E6362 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AA84DA22D08A2C008E6362 /* GraphViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		843CC98F22CC698F00BC85AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		843CC99522CC6D3000BC85AE /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		843CC99722CC6F0000BC85AE /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		843CC99922CC7A9D00BC85AE /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		843CC99B22CCB15900BC85AE /* Draw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Draw.swift; sourceTree = "<group>"; };
+		84AA84DA22D08A2C008E6362 /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,8 +70,8 @@
 				843CC98F22CC698F00BC85AE /* Info.plist */,
 				843CC99522CC6D3000BC85AE /* BookCell.swift */,
 				843CC99722CC6F0000BC85AE /* Book.swift */,
-				843CC99922CC7A9D00BC85AE /* GraphViewController.swift */,
 				843CC99B22CCB15900BC85AE /* Draw.swift */,
+				84AA84DA22D08A2C008E6362 /* GraphViewController.swift */,
 			);
 			path = "CS541-Project4";
 			sourceTree = "<group>";
@@ -148,9 +148,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				843CC99822CC6F0000BC85AE /* Book.swift in Sources */,
-				843CC99A22CC7A9D00BC85AE /* GraphViewController.swift in Sources */,
 				843CC99622CC6D3000BC85AE /* BookCell.swift in Sources */,
 				843CC99C22CCB15900BC85AE /* Draw.swift in Sources */,
+				84AA84DB22D08A2C008E6362 /* GraphViewController.swift in Sources */,
 				843CC98622CC698F00BC85AE /* ViewController.swift in Sources */,
 				843CC98422CC698F00BC85AE /* AppDelegate.swift in Sources */,
 			);
