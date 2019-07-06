@@ -10,6 +10,9 @@ import UIKit
 
 class GraphViewController: UIViewController {
 
+    @IBOutlet weak var drawView: Draw!
+    @IBOutlet weak var slope: UISlider!
+    @IBOutlet weak var cvalue: UISlider!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,4 +30,38 @@ class GraphViewController: UIViewController {
     }
     */
 
+    @IBAction func slopechanged(_ sender: Any) {
+        
+    slopeupdate()
+    }
+    
+    
+    
+    
+    @IBAction func yvalue(_ sender: Any) {
+        
+        yupdate()
+        
+        
+    }
+    
+    
+    
+    func slopeupdate() {
+        drawView.m = CGFloat(slope.value)
+        
+        
+        drawView.setNeedsDisplay()
+        
+    }
+    
+    
+    
+    func yupdate() {
+        drawView.c = CGFloat(cvalue.value)
+        
+        
+        drawView.setNeedsDisplay()
+        
+    }
 }
