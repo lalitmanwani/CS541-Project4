@@ -21,16 +21,60 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     CustomCell *cell = [[CustomCell alloc]init];
     cell.strimg= @"Origin.jpg";
     cell.strlb1= @"Dan Brown";
     cell.strlb2 = @"Origin";
     
+    CustomCell *cell1 = [[CustomCell alloc]init];
+    cell1.strimg= @"hp.jpg";
+    cell1.strlb1= @"J K Rowling";
+    cell1.strlb2 = @"Harry Potter and the Sorcerer's Stone";
     
-    _arrdata = [[NSMutableArray alloc]initWithObjects:cell, nil];
+    
+    
+    CustomCell *cell2 = [[CustomCell alloc]init];
+    cell2.strimg= @"amish.jpg";
+    cell2.strlb1= @"Amish Tripathi";
+    cell2.strlb2 = @"Immortals of Mehula";
+    
+    CustomCell *cell3 = [[CustomCell alloc]init];
+    cell3.strimg= @"art.jpg";
+    cell3.strlb1= @"Mark Manson";
+    cell3.strlb2 = @"The Subtle Art of Not Giving F*CK";
+    
+    
+    CustomCell *cell4 = [[CustomCell alloc]init];
+    cell4.strimg= @"hl.jpg";
+    cell4.strlb1= @"Harper Lee";
+    cell4.strlb2 = @"To Kill A Mocking Bird";
+    
+    
+    CustomCell *cell5 = [[CustomCell alloc]init];
+    cell5.strimg= @"jp.jpg";
+    cell5.strlb1= @"James Patterson";
+    cell5.strlb2 = @"Target";
+    
+    CustomCell *cell6 = [[CustomCell alloc]init];
+    cell6.strimg= @"lean.jpg";
+    cell6.strlb1= @"Sheryl Sandberg";
+    cell6.strlb2 = @"Lean In";
+    
+    
+    CustomCell *cell7 = [[CustomCell alloc]init];
+    cell7.strimg= @"sk.jpg";
+    cell7.strlb1= @"Stephen King";
+    cell7.strlb2 = @"Pet Sematary";
+    
+    
+    
+    
+    
+    _arrdata = [[NSMutableArray alloc]initWithObjects:cell,cell1,cell2,cell3,cell4,cell5,cell6,cell7, nil];
  
     self.tableview.rowHeight = UITableViewAutomaticDimension;
-    self.tableview.estimatedRowHeight = 170;
+    self.tableview.estimatedRowHeight = 130;
    
 }
 

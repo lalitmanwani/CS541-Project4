@@ -56,6 +56,9 @@
     
     drawGraph.c = yinter.value;
     [drawGraph setNeedsDisplay];
+    
+    
+
 }
 
 
@@ -109,8 +112,5 @@
     
     
 }
-
-
-
 
 @end
