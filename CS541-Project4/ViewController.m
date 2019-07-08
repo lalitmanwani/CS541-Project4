@@ -20,7 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.tableview.allowsMultipleSelectionDuringEditing = NO;
     
     CustomCell *cell = [[CustomCell alloc]init];
     cell.strimg= @"Origin.jpg";
@@ -96,6 +96,27 @@
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _arrdata.count;
 }
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    // Return YES if you want the specified item to be editable.
+    return YES;
+}
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //add code here for when you hit delete
+        
+       // [_arrdata removeObject:indexPath.row];
+        [_arrdata removeObjectAtIndex:indexPath.row];
+        tableView.reloadData;
+    }
+}
+
+
+
+
 
 
 @end
